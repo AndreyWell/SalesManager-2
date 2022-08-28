@@ -1,0 +1,10 @@
+*.iml
+*.xml
+.idea
+out/
+target/
+src/ru/
+ru/
+/src/ru/
+/ru/
+ru.netology.SalesManager1/
