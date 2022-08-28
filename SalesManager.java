@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class SalesManager {
     protected int[] sales;
 
@@ -13,5 +15,14 @@ public class SalesManager {
             }
         }
         return max;
+    }
+
+    public int average() {
+        int result = 0;
+        Arrays.sort(sales);
+        for (int i = 1; i < sales.length - 1; i++) {
+            result += sales[i];
+        }
+        return result / (sales.length - 2);
     }
 }
