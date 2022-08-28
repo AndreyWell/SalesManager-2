@@ -5,6 +5,8 @@ public class Main {
         SalesManager salesManager = new SalesManager(sales);
 
         int result = salesManager.max();
-        System.out.println(result);
+        System.out.println("Max: " + result);
+        int average = salesManager.average();
+        System.out.println("Average: " + average);
     }
 }
